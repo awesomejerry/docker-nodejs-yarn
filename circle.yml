@@ -10,5 +10,5 @@ deployment:
   hub:
     branch: master
     commands:
-      - docker login -u $DOCKER_USER -p $DOCKER_PASS
+      - docker login --email=$DOCKER_EMAIL --username=$DOCKER_USER --password=$DOCKER_PASS
       - docker push awesomejerry/nodejs-yarn
